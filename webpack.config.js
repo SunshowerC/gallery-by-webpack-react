@@ -44,19 +44,19 @@ var config = {
         ]
     },
     plugins: [
-        new webpack.DefinePlugin({   //将React切换到产品环境，开发环境下请注释掉
-            'process.env': {
-                NODE_ENV: JSON.stringify('production')
-            }
-        }),
-        new webpack.optimize.UglifyJsPlugin({   //压缩
-            output: {
-                comments: false  // remove all comments
-            },
-            compress: {
-                warnings: false
-            }
-        })
+        // new webpack.DefinePlugin({   //将React切换到产品环境
+        //     'process.env': {
+        //         NODE_ENV: JSON.stringify('production'),
+        //     },
+        // }),
+        // new webpack.optimize.UglifyJsPlugin({   //压缩
+        //     output: {
+        //         comments: false,  // remove all comments
+        //     },
+        //     compress: {
+        //         warnings: false
+        //     }
+        // })
 
     ],
 

@@ -44,8 +44,6 @@ var ImgFigure = React.createClass({
     render: function () {
         var styleObj = this.props.arrange.pos;
         var figClass = 'img-figure';
-
-        styleObj.webkitTransform = "translate(-50%,-50%) rotate(" + this.props.arrange.rotate + "deg)";
         styleObj.transform = "translate(-50%,-50%) rotate(" + this.props.arrange.rotate + "deg)";
         // styleObj.transform = "translate(-50%,-50%)" + (this.props.arrange.isReverse ? " rotateY(180deg)" : " rotate(" + this.props.arrange.rotate + "deg)" );
 
